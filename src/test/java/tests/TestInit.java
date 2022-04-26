@@ -31,7 +31,6 @@ public class TestInit {
     public void after(){
 //        driver.quit();
     }
-
 //    public void waitTillElementContainsText(String locator, String text) {
 //        WebDriverWait wait = new WebDriverWait(driver, 15);
 //        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(locator), text));

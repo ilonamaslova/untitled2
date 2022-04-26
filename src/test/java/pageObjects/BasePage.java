@@ -32,6 +32,11 @@ public class BasePage {
         sleep(getSlowMoNun());
         return driver.findElement(By.xpath(locator));
     }
+//    public WebElement getElementByXpath(String locator) {
+//        sleep(getSlowMoNun());
+//        WebDriverWait wait = new WebDriverWait(driver, 10);
+//        return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
+//    }
 
     private int getSlowMoNun() {
         if (System.getProperty("slow_mo") == null){
@@ -39,6 +44,7 @@ public class BasePage {
         }else {
             return Integer.parseInt(System.getProperty("slow_mo"));
         }
+
 
     }
 
